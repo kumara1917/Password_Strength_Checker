@@ -4,12 +4,12 @@ A simple web application to evaluate and display the strength of passwords based
 
 ## Table of Contents
 
-- [Features](#Features)
-- [Demo]()
-- [Installation](#Installation)
-- [Usage](#Usage)
-- [Technologies Used](#Technologies Used)
-- [Contributing](#Contributing)
+- [Features](#features)
+- [Demo](#demo)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
 
 ## Features
 
@@ -68,7 +68,7 @@ Follow the steps below...
 
 5.git commit -m "Add feature-name"
 
-Push to the branch.
+6.Push to the branch.
 
 6.git push origin feature-name
 
