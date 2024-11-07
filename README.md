@@ -4,13 +4,12 @@ A simple web application to evaluate and display the strength of passwords based
 
 ## Table of Contents
 
-- [Features]()
+- [Features](#Features)
 - [Demo]()
-- [Installation]()
-- [Usage]()
-- [Technologies Used]()
-- [Contributing]()
-- [License]()
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Technologies Used](#Technologies Used)
+- [Contributing](#Contributing)
 
 ## Features
 
