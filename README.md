@@ -6,11 +6,11 @@ A simple web application to evaluate and display the strength of passwords based
 
 - [Features]()
 - [Demo]()
-- [Installation](#installation)
-- [Usage](#usage)
-- [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
+- [Installation]()
+- [Usage]()
+- [Technologies Used]()
+- [Contributing]()
+- [License]()
 
 ## Features
 
