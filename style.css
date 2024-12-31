@@ -21,8 +21,8 @@ body {
     background-color: #ffffff;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-direction: column; /* Arrange children in a column */
-    align-items: center; /* Center children horizontally */
+    flex-direction: column;
+    align-items: center;
 }
 
 .container h1 {
@@ -36,7 +36,7 @@ body {
 .inputBox {
     position: relative;
     margin-bottom: 5px;
-    width: 100%; /* Ensure full width for inputs */
+    width: 100%;
 }
 
 .inputBox span {
@@ -67,7 +67,7 @@ body {
     justify-content: space-between;
     margin-bottom: 15px;
     margin-top: 15px;
-    width: 100%; /* Ensure full width for rows */
+    width: 100%;
 }
 
 .row p,
@@ -87,8 +87,8 @@ body {
 }
 
 .genBtn {
-    width: 100%; /* Full width for button */
-    padding: 12px 0px; /* Padding for button */
+    width: 100%;
+    padding: 12px 0px;
     border: none;
     border-radius: 4px;
     font-size: 16px;
@@ -96,12 +96,11 @@ body {
     color: #fff;
     background-color: #3162cb;
     cursor: pointer;
-    margin-top: 30px; /* Adjust margin as needed */
+    margin-top: 30px;
     position: relative;
     z-index: 0;
 }
 
-/* Glowing Button Styles */
 .genBtn::after {
     content: "";
     z-index: -1;
@@ -114,7 +113,6 @@ body {
     border-radius: 10px;
 }
 
-/* glow */
 .genBtn::before {
     content: "";
     background: linear-gradient(
@@ -142,7 +140,6 @@ body {
     100% {background-position: 0 0;}
 }
 
-/* hover */
 .genBtn:hover::before {
     opacity: 1;
 }
@@ -155,8 +152,6 @@ body {
     color: #000;
     font-weight: bold;
 }
-
-/* End of Glowing Button Styles */
 
 input[type="range"] {
     width: 100%;
@@ -186,22 +181,22 @@ input[type="range"] {
 
 .pass-indicator.weak::before {
     width: 20%;
-    background-color: #e64a4a; /* Red */
+    background-color: #e64a4a;
 }
 
 .pass-indicator.medium::before {
     width: 50%;
-    background-color: #f1c80b; /* Yellow */
+    background-color: #f1c80b;
 }
 
 .pass-indicator.strong::before {
     width: 80%;
-    background-color: #4285f4; /* Blue */
+    background-color: #4285f4;
 }
 
 .pass-indicator.very-strong::before {
     width: 100%;
-    background-color: #4caf50; /* Green */
+    background-color: #4caf50;
 }
 
 .strength-message {
@@ -210,17 +205,17 @@ input[type="range"] {
 }
 
 .weak {
-    color: #e64a4a; /* Red */
+    color: #e64a4a;
 }
 
 .medium {
-    color: #f1c80b; /* Yellow */
+    color: #f1c80b;
 }
 
 .strong {
-    color: #4285f4; /* Blue */
+    color: #4285f4;
 }
 
 .very-strong {
-    color: #4caf50; /* Green */
+    color: #4caf50;
 }
