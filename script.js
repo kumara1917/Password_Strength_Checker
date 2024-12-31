@@ -24,30 +24,27 @@ inputSlider.addEventListener("input", () => {
     generatePassword();
 });
 
-// Function to check if mandatory fields are selected
 function checkMandatoryFields() {
     if (!uppercaseEl.checked || !symbolsEl.checked) {
         strengthMessage.textContent = "Please select uppercase and symbols options.";
         strengthMessage.className = "strength-message weak";
-        passBox.value = ""; // Clear password box if requirements are not met
-        passIndicator.className = "pass-indicator weak"; // Reset indicator
-        return true; // Return true indicating mandatory fields are not met
+        passBox.value = "";
+        passIndicator.className = "pass-indicator weak";
+        return true;
     }
-    strengthMessage.textContent = ""; // Clear message if fields are selected
-    return false; // Return false indicating mandatory fields are met
+    strengthMessage.textContent = ""; 
+    return false;
 }
 
 function generatePassword() {
-    // Check for mandatory fields
     if (checkMandatoryFields()) {
-        return; // If mandatory fields are not met, exit the function
+        return; 
     }
 
     const length = inputSlider.value;
     let characters = "";
     let passwordArray = [];
 
-    // Ensure at least one character from each selected category
     if (lowercaseEl.checked) {
         passwordArray.push(lowercaseLetters.charAt(Math.floor(Math.random() * lowercaseLetters.length)));
         characters += lowercaseLetters;
@@ -65,16 +62,13 @@ function generatePassword() {
         characters += symbols;
     }
 
-    // Fill the rest of the password length with random characters from all selected types
     for (let i = passwordArray.length; i < length; i++) {
         passwordArray.push(characters.charAt(Math.floor(Math.random() * characters.length)));
     }
 
-    // Shuffle the array to ensure random order and convert to string
     passwordArray = passwordArray.sort(() => Math.random() - 0.5);
     const password = passwordArray.join("");
 
-    // Set the generated password and update the indicator
     passBox.value = password;
     updatePasswordIndicator();
 }
@@ -91,8 +85,8 @@ function updatePasswordIndicator() {
 }
 
 function getPasswordStrength(password) {
-    let strength = "weak"; // default
-    const lengthCriteria = password.length >= 8; // Minimum length criteria
+    let strength = "weak";
+    const lengthCriteria = password.length >= 8;
     const varietyCriteria = (
         (/[a-z]/.test(password) && lowercaseEl.checked) &&
         (/[A-Z]/.test(password) && uppercaseEl.checked) &&
@@ -117,7 +111,6 @@ window.addEventListener('DOMContentLoaded', () => {
     updatePasswordIndicator();
 });
 
-// Copy password to clipboard
 copyBtn.addEventListener("click", () => {
     if (passBox.value !== "") {
         navigator.clipboard.writeText(passBox.value);
